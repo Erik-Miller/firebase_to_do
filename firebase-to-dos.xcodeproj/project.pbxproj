@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC7A76B52468B49A003285CC /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A76B42468B49A003285CC /* TaskCellViewModel.swift */; };
+		DC7A76B72468B6DB003285CC /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A76B62468B6DB003285CC /* TaskListViewModel.swift */; };
 		DCD0F19624687E5A00660CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0F19524687E5A00660CF9 /* AppDelegate.swift */; };
 		DCD0F19824687E5A00660CF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0F19724687E5A00660CF9 /* SceneDelegate.swift */; };
 		DCD0F19B24687E5A00660CF9 /* firebase_to_dos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCD0F19924687E5A00660CF9 /* firebase_to_dos.xcdatamodeld */; };
-		DCD0F19D24687E5A00660CF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0F19C24687E5A00660CF9 /* ContentView.swift */; };
+		DCD0F19D24687E5A00660CF9 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0F19C24687E5A00660CF9 /* TaskListView.swift */; };
 		DCD0F19F24687E6200660CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD0F19E24687E6200660CF9 /* Assets.xcassets */; };
 		DCD0F1A224687E6200660CF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD0F1A124687E6200660CF9 /* Preview Assets.xcassets */; };
 		DCD0F1A524687E6200660CF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD0F1A324687E6200660CF9 /* LaunchScreen.storyboard */; };
 		DCD0F1B024687E6300660CF9 /* firebase_to_dosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0F1AF24687E6300660CF9 /* firebase_to_dosUITests.swift */; };
+		DCD0F1BC2468AC0F00660CF9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0F1BB2468AC0F00660CF9 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC7A76B42468B49A003285CC /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		DC7A76B62468B6DB003285CC /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		DCD0F19224687E5A00660CF9 /* firebase-to-dos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "firebase-to-dos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD0F19524687E5A00660CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCD0F19724687E5A00660CF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DCD0F19A24687E5A00660CF9 /* firebase_to_dos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = firebase_to_dos.xcdatamodel; sourceTree = "<group>"; };
-		DCD0F19C24687E5A00660CF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCD0F19C24687E5A00660CF9 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		DCD0F19E24687E6200660CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCD0F1A124687E6200660CF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DCD0F1A424687E6200660CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		DCD0F1AB24687E6300660CF9 /* firebase-to-dosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "firebase-to-dosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD0F1AF24687E6300660CF9 /* firebase_to_dosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebase_to_dosUITests.swift; sourceTree = "<group>"; };
 		DCD0F1B124687E6300660CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD0F1BB2468AC0F00660CF9 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC7A76B32468B47E003285CC /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC7A76B42468B49A003285CC /* TaskCellViewModel.swift */,
+				DC7A76B62468B6DB003285CC /* TaskListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		DCD0F18924687E5A00660CF9 = {
 			isa = PBXGroup;
 			children = (
@@ -81,9 +96,10 @@
 		DCD0F19424687E5A00660CF9 /* firebase-to-dos */ = {
 			isa = PBXGroup;
 			children = (
-				DCD0F19524687E5A00660CF9 /* AppDelegate.swift */,
-				DCD0F19724687E5A00660CF9 /* SceneDelegate.swift */,
-				DCD0F19C24687E5A00660CF9 /* ContentView.swift */,
+				DCD0F1BE2468ACF500660CF9 /* Views */,
+				DC7A76B32468B47E003285CC /* View Models */,
+				DCD0F1BA2468ABFF00660CF9 /* Model */,
+				DCD0F1BD2468ACDD00660CF9 /* App */,
 				DCD0F19E24687E6200660CF9 /* Assets.xcassets */,
 				DCD0F1A324687E6200660CF9 /* LaunchScreen.storyboard */,
 				DCD0F1A624687E6200660CF9 /* Info.plist */,
@@ -108,6 +124,31 @@
 				DCD0F1B124687E6300660CF9 /* Info.plist */,
 			);
 			path = "firebase-to-dosUITests";
+			sourceTree = "<group>";
+		};
+		DCD0F1BA2468ABFF00660CF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0F1BB2468AC0F00660CF9 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCD0F1BD2468ACDD00660CF9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0F19524687E5A00660CF9 /* AppDelegate.swift */,
+				DCD0F19724687E5A00660CF9 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DCD0F1BE2468ACF500660CF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0F19C24687E5A00660CF9 /* TaskListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7A76B72468B6DB003285CC /* TaskListViewModel.swift in Sources */,
 				DCD0F19624687E5A00660CF9 /* AppDelegate.swift in Sources */,
 				DCD0F19B24687E5A00660CF9 /* firebase_to_dos.xcdatamodeld in Sources */,
-				DCD0F19D24687E5A00660CF9 /* ContentView.swift in Sources */,
+				DCD0F1BC2468AC0F00660CF9 /* Task.swift in Sources */,
+				DC7A76B52468B49A003285CC /* TaskCellViewModel.swift in Sources */,
+				DCD0F19D24687E5A00660CF9 /* TaskListView.swift in Sources */,
 				DCD0F19824687E5A00660CF9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +415,7 @@
 				DEVELOPMENT_TEAM = UCPH8DTAC9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "firebase-to-dos/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,6 +436,7 @@
 				DEVELOPMENT_TEAM = UCPH8DTAC9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "firebase-to-dos/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
